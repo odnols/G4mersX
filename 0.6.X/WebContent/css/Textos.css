@@ -1,0 +1,28 @@
+#click_deslogar{
+	text-shadow: -0.01rem 0.01rem 2rem;
+}
+#titulo{
+	color: white;
+}
+#historical{
+	color: #CCCC09;
+}
+#clik_historico{
+	text-shadow: -0.01rem 0.01rem 2rem;
+}
+.dias_ruins{
+	color: red;
+}
+.dias_bons{
+	color: #0CDD0C;
+}
+.datas_{
+	color: white;
+}
+#num{
+	font-family: Air Americana;
+	text-shadow: -0.01rem 0.01rem 3rem;
+}
+.impares{
+	color: #27E3E7;
+}

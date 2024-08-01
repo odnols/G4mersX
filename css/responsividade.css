@@ -1,0 +1,755 @@
+/* telas entre 1367 e 1700 */
+@media only screen and (min-width: 1367px) and (max-width: 2200px) {
+	.img_destaq {
+		width: 960px;
+		height: 540px;
+	}
+
+	.img_destaq_fun {
+		width: 965px;
+		height: 545px;
+	}
+
+	.img_destaq_fun2 {
+		width: 970px;
+		height: 550px;
+	}
+
+	#texto_este {
+		max-width: 800px;
+		width: 750px;
+	}
+
+	#descricao_dia {
+		width: 800px;
+		height: 450px;
+		font-size: 30px;
+	}
+
+	#guia_importa {
+		position: fixed;
+	}
+
+	hr#loading_add {
+		display: block;
+	}
+
+	hr#loading_add2 {
+		display: none;
+	}
+
+	#melhor_pior {
+		float: right;
+		width: auto;
+		width: 35%;
+	}
+
+	h2#total_msg {
+		padding-top: 2%;
+		padding-right: 38%;
+	}
+
+	div#lista_dias {
+		width: 50%;
+	}
+
+	div#progresso_ {
+		padding-right: 9%;
+	}
+
+	div#alinhadeira_exp {
+		padding-left: 20%;
+	}
+
+	div#add_dia {
+		height: 150%;
+	}
+
+	header#verifica_dias {
+		border-left: 20%;
+	}
+
+	div#pop-up {
+		top: 55%;
+		left: 20%;
+		width: 40%;
+	}
+
+	div#info_historic {
+		display: none;
+	}
+
+	input#botao_salva {
+		float: left;
+		top: -25%;
+		width: 28%;
+		position: relative;
+	}
+}
+
+/* telas entre 768px e 1366px */
+@media only screen and (min-width: 721px) and (max-width: 1366px) {
+	div#img {
+		position: absolute;
+		right: -10%;
+	}
+
+	hr#loading_add {
+		display: block;
+	}
+
+	hr#loading_add2 {
+		display: none;
+	}
+
+	#alinhadeira_exp2 {
+		position: absolute;
+	}
+
+	img#img_ind {
+		right: 2%;
+		position: fixed;
+	}
+
+	div#melhor_pior {
+		float: right;
+		width: 28%;
+	}
+
+	div#info_historic {
+		display: none;
+	}
+
+	#guia_importa {
+		position: fixed;
+	}
+}
+
+/* telas com largura entre 0px e 767px  980 */
+@media only screen and (min-width: 0px) and (max-width: 720px) {
+
+	/* Página de dias históricos */
+	#imagem_este {
+		transform: skew(00turn, 0deg);
+		top: 60%;
+		right: 0%;
+		animation: aparece_bloco 2s;
+		width: 98%;
+		right: 1%;
+	}
+
+	.img_destaq {
+		width: 100%;
+		height: 50%;
+	}
+
+	.img_destaq_fun {
+		top: -65%;
+		position: fixed;
+		width: 98%;
+		right: .1%;
+		height: 200px;
+		transform: skew(0.01turn, 1deg);
+		opacity: .7;
+	}
+
+	.img_destaq_fun2 {
+		transform: skew(-0.03turn, 1deg);
+		position: fixed;
+		opacity: .5;
+		top: -150%;
+		width: 100%;
+		height: 200px;
+	}
+
+	#texto_este {
+		width: 90%;
+		top: 17%;
+		left: 5%;
+		transform: skew(0.00turn, 0deg);
+		animation: desc_txto_historic 2s;
+	}
+
+	@keyframes desc_txto_historic {
+		0% {
+			top: -50%;
+		}
+
+		100% {
+			top: 17%;
+		}
+	}
+
+	#descricao_dia {
+		background-color: rgba(255, 255, 255, .3);
+		width: 100%;
+		height: 50%;
+		font-size: 20px;
+	}
+
+	iframe#usuarios_on_iframe {
+		position: fixed;
+		top: 11%;
+		left: 2%;
+	}
+
+	button#apagar {
+		position: relative;
+	}
+
+	button#apagar_ {
+		position: relative;
+	}
+
+	/* Página Central */
+	#debug_mode {
+		left: 5%;
+		top: 90%;
+	}
+
+	#guia_importa {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
+	.lista_importa {
+		animation: desce_importa 1s;
+		top: 2%;
+		left: 5%;
+		font-size: 10px;
+		width: 90%;
+		position: relative;
+	}
+
+	#import_dia {
+		padding-top: 15%;
+	}
+
+	@keyframes desce_importa {
+		0% {
+			top: -50%;
+		}
+
+		100% {
+			top: 2%;
+		}
+	}
+
+	#puxador_lateral {
+		animation: aparece_bloco .5s;
+	}
+
+	@keyframes aparece_bloco {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	form#import_dia {
+		width: 90%;
+		left: 5%;
+	}
+
+	.escolhe_arquiv_impt {
+		padding-left: 12%;
+	}
+
+	.check_box_soma {
+		font-size: 15px;
+	}
+
+	.usuarios_disponiveis {
+		z-index: 4;
+	}
+
+	#configura_lateral_central {
+		z-index: 3;
+		top: 91%;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 0px;
+		width: 100%;
+		height: 10%;
+		left: 5%;
+		animation: none;
+	}
+
+	h1#configura_lateral_ {
+		position: absolute;
+		left: 2%;
+		top: 5px;
+		font-size: 25px;
+		transform: rotate(0deg);
+	}
+
+	#atalho_lateral {
+		width: 50px;
+	}
+
+	#atalho_lateral:hover {
+		width: 50px;
+	}
+
+	h5.perfil {
+		right: 20%;
+		top: 5px;
+		position: fixed;
+	}
+
+	.escolhe_blocos {
+		width: 90%;
+		left: 5%;
+	}
+
+	form#quadro_edita {
+		width: 100%;
+		position: absolute;
+		left: 0%;
+	}
+
+	div.color-responsive {
+		width: 65px;
+		height: 65px;
+		position: relative;
+	}
+
+	img#import_img {
+		width: 100%;
+	}
+
+	div#perfil {
+		width: 100%;
+		padding-top: 20%;
+		border-bottom-right-radius: 0px;
+	}
+
+	img#img_perfil {
+		width: 60% !important;
+		height: 50%;
+	}
+
+	#escolhe_quadro_add_ {
+		display: none;
+	}
+
+	#quadro_add {
+		border-top-left-radius: 25px;
+	}
+
+	#usuarios_atribuidos {
+		display: none;
+	}
+
+	#insere_atribuicao {
+		width: 100%;
+	}
+
+	div#alinhadora {
+		width: 100%;
+		padding-left: 5%;
+	}
+
+	div.navbar-header {
+		position: relative;
+		float: left;
+	}
+
+	button.navbar-toggle {
+		right: 0;
+		position: absolute;
+	}
+
+	div.navbar-collapse {
+		padding-top: 10%;
+		float: left;
+	}
+
+	div#bs-example-navbar-collapse-1 {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	ul.navbar-right {
+		position: relative;
+		width: 100%;
+		left: 10%;
+	}
+
+	i#espiar_fundo {
+		display: none;
+	}
+
+	div#add_dia {
+		width: 100%;
+		padding-top: 18%;
+		text-align: center;
+	}
+
+	div#info {
+		display: none;
+	}
+
+	div#dia_impt {
+		display: none;
+	}
+
+	h5.tempo {
+		font-size: 15px;
+		position: relative;
+	}
+
+	li#click_grafical {
+		display: none;
+	}
+
+	table#tabela_ {
+		display: none;
+	}
+
+	h5#hora {
+		left: 2%;
+		position: relative;
+	}
+
+	h3#atualizado_ok {
+		width: 100%;
+		left: 30%;
+		position: fixed;
+	}
+
+	#usuarios_on_iframe_lateral {
+		position: fixed;
+		left: 1.5%;
+		width: 100% !important;
+		top: 11%;
+		height: 50px;
+		transform: scale(1);
+		z-index: 3;
+	}
+
+	.usuarios_disponiveis {
+		width: 40%;
+		height: 90%;
+	}
+
+	.opcoes_puxa_lateral {
+		height: 90%;
+	}
+
+	.mgs_feed {
+		display: none;
+	}
+
+	hr#loading_add {
+		display: none;
+	}
+
+	hr#loading_add2 {
+		display: block;
+	}
+
+	div.Input {
+		width: 95%;
+	}
+
+	hr#click_anual {
+		width: 64%;
+		padding-top: 10%;
+	}
+
+	div#alinhadora2 {
+		padding-left: 2%;
+		width: 99%;
+	}
+
+	div.bloco_historic {
+		float: none;
+		position: relative;
+	}
+
+	div.container_hist {
+		width: 99%;
+		height: auto;
+	}
+
+	div#info_historic {
+		display: block;
+	}
+
+	div#select_mes_top {
+		width: 99%;
+	}
+
+	a#select_ano {
+		width: 45%;
+		float: right;
+	}
+
+	a#select_total {
+		width: 44%;
+		float: left;
+	}
+
+	div#botoes_op {
+		width: 99%;
+	}
+
+	section#section_for_smart_fone {
+		display: block;
+	}
+
+	section#section_for_pc {
+		display: none;
+	}
+
+	ul.cat {
+		width: 98%;
+		left: 1%;
+	}
+
+	li#seleciona {
+		left: 12%;
+	}
+
+	div#lembrete {
+		display: none;
+	}
+
+	div#lembrete_peqno {
+		display: block;
+	}
+
+	#alinhadeira_exp {
+		padding-left: 5%;
+		width: 100%;
+	}
+
+	#alinhadeira_exp2 {
+		padding-left: 0%;
+		width: 100%;
+	}
+
+	a#select_ano {
+		width: 100%;
+	}
+
+	a#select_total {
+		top: 5%;
+		width: 100%;
+		position: relative;
+	}
+
+	img#img_ind {
+		z-index: 0;
+		opacity: .5;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		left: 10%;
+	}
+
+	div.loga {
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+		width: 100%;
+		padding-top: 8%;
+	}
+
+	/* Página de Perfil */
+	#quadro_edita {
+		background-image: none;
+		background-color: rgba(0, 0, 0, 0);
+		animation: aparece_bloco 2s;
+		box-shadow: 0px 0px 0px black;
+	}
+
+	div#imagem_texto {
+		top: 7%;
+		position: relative;
+		width: 95%;
+	}
+
+	img#img_perfil_edit {
+		width: 100%;
+		height: 80%;
+	}
+
+	#insere_dados {
+		position: relative;
+		top: 10%;
+	}
+
+	#bloco_insere_x {
+		z-index: 2;
+		width: 95%;
+	}
+
+	input.telefone_x_input {
+		width: 100%;
+	}
+
+	label.telefone_x_label {
+		top: 0%;
+		position: absolute;
+	}
+
+	#colorama_perfil_edit {
+		width: 95%;
+		top: 30%;
+		left: 0%;
+		float: left;
+		position: relative;
+		padding-bottom: 15px;
+	}
+
+	input#botao_salva {
+		position: relative;
+		float: left;
+		left: 28%;
+		z-index: 3;
+		top: -30%;
+	}
+
+	h3#atualizado_ok {
+		text-shadow: 0.0rem 0.0rem 0.2rem black;
+		width: 500px;
+		position: absolute;
+		top: 50%;
+		left: 12%;
+		font-size: 13px;
+	}
+
+	/* Página de Estatísticas */
+	body#estatistificado_body {
+		background-color: grey;
+	}
+
+	#download_automatic {
+		display: none;
+		top: 75%;
+		position: fixed;
+	}
+
+	h3.check_box_download {
+		font-size: 15px;
+	}
+
+	div#melhor_pior {
+		width: 95%;
+		top: 20px;
+		left: 5%;
+		position: relative;
+	}
+
+	#separador_estatic {
+		display: block;
+	}
+
+	#footer_estatic {
+		bottom: 0;
+		color: white;
+		position: fixed;
+		box-shadow: inset 0px 0px 50px black;
+		background-color: rgba(26, 84, 116, .1);
+		height: 10%;
+	}
+
+	div#lista_dias {
+		position: relative;
+		top: 20px;
+		width: 96%;
+	}
+
+	div#progresso_ {
+		display: none;
+	}
+
+	h2#total_msg {
+		display: none;
+	}
+
+	h5#total_back {
+		display: block;
+	}
+
+	h5#media_back {
+		display: block;
+	}
+
+	div#pop-up {
+		display: none;
+	}
+
+	div#pop-up2 {
+		display: block;
+	}
+
+	/* Página de Configurações Centrais */
+	#itens_escolhe {
+		position: fixed;
+		top: 15%;
+		left: 80%;
+		opacity: .4;
+	}
+
+	p#info_requ {
+		display: none;
+	}
+
+	#click_mensagens_on {
+		animation: aparece_bloco 2s;
+	}
+
+	#click_usuario_on {
+		animation: aparece_bloco 2s;
+	}
+
+	h4#nome_usuario {
+		display: none;
+	}
+
+	.bloco_msg_ {
+		width: 95%;
+		left: 2.5%;
+	}
+
+	iframe#usuarios_on_iframe_confg {
+		left: 50%;
+	}
+
+	div#imagem_texto {
+		height: auto;
+		right: 2%;
+		width: 98%;
+	}
+
+	img#img_perfil_config {
+		width: 100%;
+		height: 80%;
+	}
+
+	div#adm_updt {
+		position: relative;
+		font-size: 50px;
+		left: 0%;
+		right: 2%;
+		top: 20%;
+	}
+
+	h4#modera_text {
+		position: relative;
+		font-size: 12px;
+		padding-bottom: 15%;
+	}
+
+	div#auto_user {
+		position: relative;
+		left: 0%;
+		width: 95%;
+	}
+}

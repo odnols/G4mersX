@@ -1,0 +1,449 @@
+body#estatistificado_body {
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	bottom: 0;
+	height: 100%;
+	background-image: linear-gradient(rgba(12, 12, 38, .7), rgba(10, 10, 40, 1));
+	background-repeat: no-repeat;
+	min-height: 100%;
+	align-items: center;
+	background-attachment: fixed;
+	margin: 0;
+}
+
+/* #loading{
+	padding-top: 10%;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+} */
+.loadingif {
+	width: 35%;
+}
+
+#lembrete {
+	font-size: 17px;
+	color: rgba(255, 255, 255, .5);
+	font-family: Arial;
+	float: right;
+	padding-right: 9px;
+	padding-top: 35px;
+	width: auto;
+	height: 80px;
+}
+
+#lembrete_peqno {
+	color: rgba(255, 255, 255, .5);
+	font-family: Arial;
+	position: fixed;
+	top: 21%;
+	display: none;
+	animation: dias_ 1s;
+}
+
+#pop-up {
+	align-items: center;
+	text-align: center;
+	float: right;
+	left: 25%;
+	bottom: 50px;
+	width: 45%;
+	color: rgba(255, 255, 255, .5);
+	text-shadow: -0.01rem 0.01rem 4rem;
+	position: absolute;
+	animation: esconde_update 5s;
+	opacity: 0;
+}
+
+#pop-up2 {
+	display: none;
+	opacity: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	top: 21.3%;
+	color: white;
+	text-shadow: -0.01rem 0.01rem 4rem;
+	position: fixed;
+	animation: esconde_update 5s;
+}
+
+@keyframes esconde_update {
+	0% {
+		opacity: 0;
+	}
+
+	40% {
+		opacity: 1;
+	}
+
+	90% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+#progresso_ {
+	font-size: 17px;
+	color: rgba(255, 255, 255, .5);
+	font-family: Arial;
+	right: 100px;
+	position: absolute;
+	padding-top: 50px;
+	height: 5px;
+}
+
+#download_automatic {
+	position: fixed;
+	right: 5%;
+	top: 10%;
+}
+
+input[type="checkbox"] {
+	position: relative;
+	width: 80px;
+	height: 40px;
+	background: #c6c6c6;
+	outline: none;
+	border-radius: 20px;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+	transition: .5s;
+}
+
+input[type="checkbox"]:before {
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+	background: #fff;
+	transform: scale(1.08);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
+	transition: .5s;
+}
+
+input:checked[type="checkbox"]:before {
+	left: 40px;
+}
+
+#mes {
+	padding-top: 55px;
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+	position: absolute;
+	padding-bottom: 25%;
+}
+
+#melhor_pior {
+	animation: aparece_bloco .5s;
+	height: auto;
+	position: relative;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, .2);
+	border-radius: 15px;
+	box-shadow: inset 0px 0px 15px black;
+}
+
+@keyframes aparece_bloco {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+#separador_estatic {
+	display: none;
+	position: relative;
+	height: 15px;
+	padding-top: 15px;
+	width: 100%;
+}
+
+#lista_dias {
+	position: relative;
+	border-radius: 15px;
+	background-color: rgba(255, 255, 255, .2);
+	width: 50%;
+	height: auto;
+	padding-bottom: 25px;
+	box-shadow: inset 0px 0px 15px black;
+	animation: aparece_bloco .5s;
+}
+
+#estrela {
+	width: 25px;
+	height: 25px;
+	text-shadow: -0.01rem 0.01rem 4rem;
+}
+
+/* CSS do Gráfico */
+#fundo_grafic {
+	display: none;
+	position: absolute;
+	background-color: rgba(0, 0, 0, .6);
+	width: 100%;
+	height: 100%;
+}
+
+#Grafico {
+	position: fixed;
+	top: 15%;
+	text-shadow: 0.0rem 0.0rem 3rem;
+	width: 100%;
+	height: 100%;
+	animation: abaixa_grafico 1s;
+}
+
+@keyframes abaixa_grafico {
+	0% {
+		top: -50%;
+	}
+
+	100% {
+		top: 15%;
+	}
+}
+
+#msgs_dias {
+	color: rgba(255, 255, 255, .5);
+}
+
+#total_msg {
+	color: rgba(255, 255, 255, .5);
+	padding-top: 25px;
+	padding-right: 25%;
+}
+
+#tabela_ {
+	top: 8%;
+	background-image: url("../img/Fundo/naves.png");
+	position: relative;
+	z-index: 1;
+	float: left;
+	color: white;
+	text-align: center;
+	background-color: rgba(13, 13, 53, .9);
+	border: solid 8px rgba(13, 13, 53, .9);
+	box-shadow: 0px 0px 15px black;
+}
+
+h5#total_back {
+	display: none;
+	color: white;
+	position: fixed;
+	font-size: 15px;
+	top: 15%;
+	left: 20%;
+	animation: dias_ 2s;
+}
+
+h5#media_back {
+	display: none;
+	color: white;
+	font-size: 15px;
+	position: fixed;
+	left: 28%;
+	top: 11%;
+	animation: dias_ 2s;
+}
+
+@keyframes dias_ {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+#linha_tab {
+	border-radius: 50px;
+	border-width: 50px;
+	padding-top: 50px;
+}
+
+#alinhadeira_exp2 {
+	width: 100%;
+	padding-right: 4%;
+}
+
+#alinhadeira_exp {
+	width: 100%;
+	padding-left: 30%;
+}
+
+.alinhadora {
+	padding-top: 35px;
+	padding-left: 3%;
+}
+
+.colorama {
+	color: rgba(155, 155, 251, .8);
+}
+
+.colorama_ht {
+	color: #E1DD13;
+	text-shadow: 0.0rem 0.0rem 1rem;
+}
+
+#baixo_mais {
+	display: none;
+}
+
+#baixo_menos {
+	display: none;
+}
+
+#deslg {
+	text-shadow: -0.01rem 0.01rem 2rem
+}
+
+#dias_ruins {
+	display: none;
+}
+
+#dias_bons {
+	display: none;
+}
+
+.lista_dias_bons {
+	float: left;
+	box-shadow: inset 0px 0px 10px black;
+	color: white;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-radius: 15px;
+	background-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+	-webkit-transition: background .5s, box-shadow .5s, text-shadow .1s;
+	transition: background .5s, box-shadow .5s, text-shadow .1s;
+}
+
+.lista_dias_bons:hover {
+	text-shadow: 0.0rem 0.0rem 3rem;
+	box-shadow: inset 0px 0px 5px;
+	background: rgba(15, 116, 19, .3);
+}
+
+.lista_dias_ruins {
+	box-shadow: inset 0px 0px 10px black;
+	color: white;
+	float: left;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-radius: 15px;
+	background-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+	-webkit-transition: background .5s, box-shadow .5s, text-shadow .1s;
+	transition: background .5s, box-shadow .5s, text-shadow .1s;
+}
+
+.lista_dias_ruins:hover {
+	text-shadow: 0.0rem 0.0rem 3rem;
+	box-shadow: inset 0px 0px 5px;
+	background: rgba(194, 25, 19, .3);
+}
+
+#footer_estatic {
+	bottom: 0;
+	color: white;
+	padding-top: 2px;
+	position: fixed;
+	width: 100%;
+	background-image: url("../img/Fundo/Floral.png");
+	box-shadow: inset 0px 0px 50px black;
+	background-color: rgba(26, 84, 116, .1);
+	height: 10px;
+	padding-bottom: 40px;
+}
+
+#link {
+	text-decoration: none;
+	-webkit-transition: text-shadow .1s, color .5s;
+	transition: text-shadow .1s, color .5s;
+	color: white;
+}
+
+#link:hover {
+	color: yellow;
+	text-shadow: 0.0rem 0.0rem 2rem;
+}
+
+/* Barra de Navegação */
+#menu {
+	background-image: url("../img/Fundo/Update.png");
+	padding-bottom: 20px;
+	transition: all 0.8s;
+	box-shadow: 0px 0px 50px black;
+}
+
+#menu.navbar-default {
+	background-color: rgba(0, 0, 0, .6);
+	border-color: rgba(231, 231, 231, .1);
+}
+
+#menu a.navbar-brand {
+	font-size: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#menu a.navbar-brand i.fa {
+	font-size: 10px;
+	color: #54d0dd;
+	vertical-align: top;
+}
+
+#menu.navbar-default .navbar-nav>li>a {
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+#menu.navbar-default .navbar-nav>li>a:hover {
+	color: #54d0dd;
+}
+
+.on {
+	background-color: #343b42 !important;
+	padding: 0 !important;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+	color: #54d0dd !important;
+	background-color: transparent;
+}
+
+.navbar-toggle {
+	border-radius: 0;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #54d0dd;
+	border-color: #54d0dd;
+}
+
+.navbar-default .navbar-toggle:hover>.icon-bar {
+	background-color: #FFF;
+}
+
+.section-title {
+	padding-bottom: 50px;
+}
